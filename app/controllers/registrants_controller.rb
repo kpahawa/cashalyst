@@ -21,9 +21,12 @@ class RegistrantsController < ApplicationController
   end
 
   def show
-    @registrants = Registrant.all
-    
   end
+
+  def showAll
+    @registrants = Registrant.all
+  end
+
 
   def destroy
   end
