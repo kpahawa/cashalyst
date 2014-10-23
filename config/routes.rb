@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   resources :registrants, only: [:create,:destroy, :show, :new, :index]
-  get 'registrants/all' => 'registrants#showAll', as: :showAll
+  get 'registrants/all' => 'registrants#showAll', as: :registrants_showAll
   # You can have the root of your site routed with "root"
   root 'landing#index'
   # get 'assets/fonts-awesome-4.1.0'

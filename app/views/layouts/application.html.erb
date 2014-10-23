@@ -30,7 +30,27 @@
 </head>
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
 
-
+  <div id="navbar-main">
+        <!-- Fixed navbar -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span style="background:url(assets/logothumb.png);"></span>
+              </button>
+              <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span style="background:url(assets/logothumb.png);">  </span></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="#home" class="smoothScroll">Home</a></li>
+            <li> <a href="#about" class="smoothScroll"> About Us</a></li>
+            <li> <a href="#services" class="smoothScroll"> Services</a></li>
+            <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+          </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+  </div>  
 <%= yield %>
 
 </body>
